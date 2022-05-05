@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.details{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    justify-items: center;
+    height: 40px;
+    background-color: rgb(146, 49, 49);
+    padding: 0px 20px;
+}
+
+.details label{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.details-container{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+.details-container i{
+    padding: 0px 20px;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 100px;
+    align-content: center;
+    justify-items: center;
+    font-size: 16px;
+    width: 100%;
+    background-color: red;
+}
+
+header nav{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-content: center;
+    justify-items: center;
+    gap: 20px;
+}
+
+header nav a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(251, 169, 44);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+header nav a:hover{
+    color: rgb(0, 123, 255);
+}
+
+header nav i{
+    color: rgb(251, 169, 44);
+}
+
+header nav i:hover{
+    color: rgb(0, 123, 255);
+    cursor: pointer;
+}
+
+.fa-bars {
+    display: none;
+}
+
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 600px;
+    align-content: center;
+    justify-items: center;
+    padding: 0px 20px;
+    gap: 20px;
+}
+
+#carouselExampleFade{
+    width: 100%;
+}
+
+.carousel-item img{
+    /* background-size: cover; */
+    object-fit: cover;
+    height: 500px;
+}
+
+#myCarousel-indicators>button {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+
+.banner-text{
+    display: grid;
+    align-content: center;
+    /* justify-items: center; */
+    /* background-color: red; */
+    width: 100%;
+}
+
+.banner-text h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 74px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+}
+
+.banner-text h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    color: rgb(251, 169, 44);
+}
+
+.banner-text p{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
+
+.banner-text-btn button{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 20px;
+}
+
+.banner-text-btn button:hover{
+    background-color: rgb(15, 15, 15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media only screen and (max-width: 1215px) {
+    header nav a{
+        display: none;
+    }
+
+    .fa-magnifying-glass{
+        display: none;
+    }
+
+    .fa-bars{
+        display: grid;
+    }
+} */
+
+/* @media only screen and (max-width: 1778px) {
+    body{
+        font-size-adjust: 1;
+    }
+}
+
+@media only screen and (max-width: 872px) {
+    .fa-magnifying-glass {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 792px) {
+    header nav a{
+        display: none;
+    }
+
+    .fa-bars {
+        display: block;
+    }
+} */
+
+@media only screen and (max-width: 1075px) {
+    .banner-text h1 {
+        font-size: 80%;
+    }
+
+    .banner-text h2 {
+        font-size: 80%;
+    }
+
+    .banner-text p {
+        font-size: 80%;
+    }
+}
