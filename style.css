@@ -85,20 +85,28 @@ header nav i:hover{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 500px;
-    /* align-content: center;
-    justify-items: center; */
+    align-content: center;
+    justify-items: center;
     padding: 0px 20px;
     gap: 20px;
 }
 
-#carouselExampleFade{
+#carouselExampleFade {
     width: 100%;
 }
 
+/*
+
 .carousel-item img{
-    /* background-size: cover; */
-    object-fit: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}*/
+
+.carousel-item img{
     height: 500px;
+    object-fit: cover;
+    width: 100%;
 }
 
 #myCarousel-indicators>button {
@@ -117,7 +125,7 @@ header nav i:hover{
 
 .banner-text{
     display: grid;
-    align-content: center;
+    /* align-content: center; */
     /* justify-items: center; */
     /* background-color: red; */
     width: 100%;
@@ -159,9 +167,11 @@ header nav i:hover{
 
 .currency{
     display: grid;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 10% 80%;
     height: 600px;
     width: 100%;
+    align-content: center;
+    justify-items: center;
     /* background-color: blue; */
 }
 
@@ -238,6 +248,7 @@ header nav i:hover{
 }
 
 .bitcoin-transaction label{
+    text-align: center;
     font-size: 3.0rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -262,6 +273,7 @@ header nav i:hover{
 }
 
 .bitcoin-exchange label {
+    text-align: center;
     font-size: 3.0rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -286,6 +298,7 @@ header nav i:hover{
 }
 
 .bitcoin-investment label {
+    text-align: center;
     font-size: 3.0rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -351,17 +364,17 @@ header nav i:hover{
 .about{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 500px;
+    height: 600px;
     align-content: center;
-    justify-items: center;
+    /* justify-items: center; */
     padding: 0px 100px;
     gap: 40px;
-    /* background-color: aqua; */
+    background-color: aqua;
 }
 
 .about-text{
     display: grid;
-    grid-template-rows: 15% 85%;
+    grid-template-rows: 20% 80%;
 }
 
 .about-text label{
@@ -380,13 +393,12 @@ header nav i:hover{
 }
 
 .about-img{
-    /* display: grid; */
+    display: grid;
     /* align-content: center;
     justify-items: center; */
-    background-image: url('pictures/about.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 430px;
+
+
+    height: 500px;
     width: 100%;
 }
 
@@ -405,7 +417,7 @@ header nav i:hover{
 .first-service{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    padding: 0px 15px;
+    padding: 0px 20px;
     gap: 30px;
 }
 
@@ -421,6 +433,7 @@ header nav i:hover{
 }
 
 .strong-security label{
+  text-align: center;
     font-size: 2.4rem;
     color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
@@ -446,10 +459,12 @@ header nav i:hover{
     background-color: rgb(43, 213, 200);
     align-content: center;
     justify-items: center;
+    padding: 0px 20px;
     gap: 10px;
 }
 
 .world-coverage label {
+    text-align: center;
     font-size: 2.4rem;
     color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
@@ -889,128 +904,118 @@ header nav i:hover{
     font-weight: 500;
 }
 
-@media only screen and (max-width:52.375em){
+@media (max-width: 75em){
+
+    .banner{
+        height: 800px;
+        /* background-color: blueviolet; */
+
+    }
+
+    .carousel-item img{
+        height: 700px;
+    }
+
     .currency{
-        height: auto;
+
+        height: 1600px;
     }
 
-    .currency .three-box {
-        display: grid;
-        grid-template-columns: none;
-        grid-template-rows: repeat(3, 1fr);
+    .currency .three-box{
+        /* background-color: red; */
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about{
+        /* background-color: darkcyan; */
+        /* align-items: center; */
+        height: 900px;
+    }
+
+    .about-text label{
+        font-size: 2.8rem;
+    }
+
+    .about-text p{
+        font-size: 1.6rem;
+    }
+
+    .about-img{
+        align-items: center;
+    }
+
+    .services{
+        padding: 0px 80px;
+    }
+
+    .services-iframe{
+        height: 360px;
+        width: 100%;
     }
 }
 
-@media only screen and (max-width: 82.125em){
-    .currency .three-box {
-        padding: 0px 40px;
-        gap: 40px;
-    }
-
-    .bitcoin-transaction label {
-        text-align: center;
-        font-size: 2.4rem;
-    }
-    
-    .bitcoin-transaction p {
-        font-size: 1.4rem;
-    }
-
-    .bitcoin-exchange label {
-        text-align: center;
-        font-size: 2.4rem;
-    }
-    
-    .bitcoin-exchange p {
-        font-size: 1.4rem;
-    }
-
-    .bitcoin-investment label {
-        text-align: center;
-        font-size: 2.4rem;
-    }
-    
-    .bitcoin-investment p {
-        font-size: 1.4rem;
-    }
-
-}
-
-@media only screen and (max-width: 67.5em){
-    .img-1 button{
-        border-radius: 0px;
-    }
-
-    .img-2 button {
-        border-radius: 0px;
-    }
-
-    .img-3 button {
-        border-radius: 0px;
-    }
-}
-
-@media only screen and (max-width: 69.625em){
+@media only screen and (max-width: 64em){
     .banner{
         grid-template-columns: none;
         grid-template-rows: repeat(2, 1fr);
-        height: auto;
-        width: 100%;
-        padding: 0px;
+        height: 1200px;
     }
 
-    .banner-text{
-        padding: 0px 20px;
-    }
-    .carousel-item img{
-        width: 100%;
+    .currency{
+        grid-template-rows: 5% 95%;
+        height: 2000px;
     }
 
+    .currency .three-box{
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+    }
 
-}
+    .about{
+        grid-template-columns: none;
+        /* grid-template-rows: 50% 50%; */
+        height: 1100px;
+    }
 
-@media only screen and (max-width: 61.5625em){
-    header nav{
-        grid-template-columns: repeat(5, 1fr);
+    .services{
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+        height: 1800px;
+        /* align-items: center;
+        align-content: center;
+        justify-items: center; */
+    }
+
+    .second-service{
+        grid-template-rows: 20% 20% 60%;
+    }
+
+    .team{
+        height: 2800px;
+        grid-template-rows: 5% 95%;
+    }
+
+    .team-text p{
+        font-size: 2rem;
+    }
+
+    .team-members{
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .team-info{
         gap: 5px;
     }
 
-    header nav .fa-magnifying-glass{
-        display: none;
+    .contactus{
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+        height: 1400px;
     }
 
-    header nav a{
-        font-size: 1.5rem;
-    }
-
-    /* html{
-        font-size: 50%;
-    }     */
-}
-
-@media only screen and (max-width:46.0625em){
-    header nav a{
-        display: none;
-    }
-
-    header nav{
-        grid-template-columns: 1fr;
-        float: right;
-    }
-
-    header nav .fa-bars{
-        display: grid;
+    .footer-three{
+        grid-template-columns: repeat(2, 1fr);
+        height: 400px;
     }
 }
-
-/* @media only screen and (max-width: 68.75em) {
-    html{
-        font-size: 50%;
-    }
-}
-
-@media only screen and (max-width: 52.8125em){
-    html{
-        font-size: 40%;
-    }
-} */
