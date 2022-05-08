@@ -115,12 +115,16 @@ header nav i:hover{
     width: 10px;
 }
 
+.carousel-caption{
+  margin-bottom: 20px;
+}
+
 .carousel-caption h5{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .carousel-caption p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .banner-text{
@@ -370,6 +374,7 @@ header nav i:hover{
     padding: 0px 100px;
     gap: 40px;
     background-color: aqua;
+    width: 100%;
 }
 
 .about-text{
@@ -394,12 +399,15 @@ header nav i:hover{
 
 .about-img{
     display: grid;
-    /* align-content: center;
-    justify-items: center; */
+    align-content: center;
+    justify-items: center;
+}
 
-
-    height: 500px;
-    width: 100%;
+.about-img img{
+    /* object-fit: cover; */
+    /* background-position:  */
+    height: 489px;
+    width: 628px;
 }
 
 .services{
@@ -408,7 +416,7 @@ header nav i:hover{
     height: 750px;
     width: 100%;
     padding: 0px 100px;
-    gap: 40px;
+    gap: 60px;
     align-items: center;
     /* align-content: center; */
     /* justify-items: center; */
@@ -501,17 +509,17 @@ header nav i:hover{
 
 .second-service p{
     font-size: 1.6rem;
-    color: rgb(207, 206, 206);
+    color: rgb(0, 0, 0);
 }
 
 .services-iframe{
     display: grid;
-    height: 400px;
+    width: 605px;
     align-content: center;
     justify-items: center;
     background: linear-gradient(rgb(255, 233, 233), rgb(255, 178, 181));
     box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.2);
-    width: 80%;
+    height: 360px;
     border-radius: 10px;
 }
 
@@ -540,7 +548,7 @@ header nav i:hover{
 .team-text p{
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
-    color: rgb(207, 206, 206);
+    color: rgb(0, 0, 0);
 }
 
 .team-members{
@@ -907,18 +915,23 @@ header nav i:hover{
 @media (max-width: 75em){
 
     .banner{
+
         height: 800px;
         /* background-color: blueviolet; */
 
     }
 
+    .banner-text{
+        padding: 40px;
+    }
+
     .carousel-item img{
-        height: 700px;
+        height: 800px;
     }
 
     .currency{
-
-        height: 1600px;
+        grid-template-rows: 5% 95%;
+        height: 1200px;
     }
 
     .currency .three-box{
@@ -940,49 +953,151 @@ header nav i:hover{
         font-size: 1.6rem;
     }
 
-    .about-img{
-        align-items: center;
-    }
 
     .services{
+        /* grid-template-rows: 30% 30%; */
         padding: 0px 80px;
+        gap: 5px;
+    }
+
+    .first-service{
+        align-content: center;
+        justify-items: center;
+        padding: none;
+    }
+
+    .second-service{
+        align-content: center;
+        justify-items: center;
+        /* grid-template-rows: repeat(3, 1fr); */
     }
 
     .services-iframe{
         height: 360px;
-        width: 100%;
+        width: 605px;
+    }
+
+    .services-iframe iframe{
+        width: 560;
+        height: 315;
     }
 }
 
 @media only screen and (max-width: 64em){
+    .details-container i{
+        padding: 0px 10px;
+    }
+
+    header nav{
+        gap: 0px;
+    }
+
+    header nav a{
+        font-size: 1.4rem;
+    }
+
     .banner{
         grid-template-columns: none;
         grid-template-rows: repeat(2, 1fr);
-        height: 1200px;
+        height: 1400px;
+        padding: 0px 0px;
     }
 
     .currency{
         grid-template-rows: 5% 95%;
-        height: 2000px;
+        align-content: center;
+        justify-items: center;
+        height: 3000px;
+        background-color: coral;
     }
 
     .currency .three-box{
         grid-template-columns: none;
-        grid-template-rows: repeat(3, 1fr);
+        padding: 0px 50px;
+        width: 80%;
+        grid-template-rows: repeat(3, 30%);
+        gap: 50px;
     }
+
+    .currency label{
+        font-size: 2.4rem;
+    }
+
+    .img-1{
+        height: 50%;
+    }
+
+    .img-2 {
+        height: 50%;
+    }
+
+    .img-3 {
+        height: 50%;
+    }
+
+    .bitcoin-transaction{
+        height: 100%;
+    }
+
+    .bitcoin-exchange {
+        height: 100%;
+    }
+
+    .bitcoin-investment {
+        height: 100%;
+    }
+
+    .img-1 button{
+        margin-top: 50%;
+    }
+
+    .img-2 button {
+        margin-top: 50%;
+    }
+
+    .img-3 button {
+        margin-top: 50%;
+    }
+    /* .img-1{
+        width: 50%;
+        padding: 0px 0px;
+    }
+
+    .img-2 {
+        width: 50%;
+    }
+
+    .img-3 {
+        width: 50%;
+    } */
 
     .about{
         grid-template-columns: none;
-        /* grid-template-rows: 50% 50%; */
-        height: 1100px;
+        grid-template-rows: 30% 30%;
+        height: 900px;
+    }
+
+    /* .about-img{
+
+        justify-items: center;
+        left: 0;
+        right: 0;
+        align-content: center;
+        justify-self: center;
+    } */
+
+    .about-img img{
+        height: 436px;
+        width: 498px;
+        align-self: center;
     }
 
     .services{
         grid-template-columns: none;
-        grid-template-rows: repeat(2, 1fr);
-        height: 1800px;
-        /* align-items: center;
+        grid-template-rows: repeat(2, 40%);
+        height: 1600px;
         align-content: center;
+        /* align-items: center;
         justify-items: center; */
     }
 
@@ -991,7 +1106,8 @@ header nav i:hover{
     }
 
     .team{
-        height: 2800px;
+        height: 3200px;
+        /* align-content: center; */
         grid-template-rows: 5% 95%;
     }
 
@@ -1000,11 +1116,26 @@ header nav i:hover{
     }
 
     .team-members{
+        /* align-content: center; */
+        /* justify-items: center; */
         grid-template-columns: none;
         grid-template-rows: repeat(3, 1fr);
     }
 
+    .team-card .team-img1{
+        height: 680px;
+    }
+
+    .team-card .team-img2 {
+        height: 680px;
+    }
+
+    .team-card .team-img3 {
+        height: 680px;
+    }
+
     .team-info{
+        height: 250px;
         gap: 5px;
     }
 
@@ -1018,4 +1149,99 @@ header nav i:hover{
         grid-template-columns: repeat(2, 1fr);
         height: 400px;
     }
+}
+
+@media only screen and (max-width: 48em){
+    header{
+        gap: 180px;
+    }
+
+    header nav{
+        grid-template-columns: 50%;
+        gap: 100px;
+    }
+
+    header nav a{
+        display: none;
+    }
+
+    .fa-magnifying-glass{
+        display: none;
+    }
+
+    .fa-bars{
+        display: grid;
+    }
+
+    .banner{
+        height: 1600px;
+    }
+    
+    .currency{
+        grid-template-rows: 3% 97%;
+        height: 2400px;
+        
+    }
+    
+    .currency label{
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    .currency .three-box{
+        padding: 0px 20px;
+    }
+
+    .about{
+        /* grid-template-rows: 35% 35%; */
+        padding: 0px 40px;
+    }
+
+    .about-text label{
+        /* font-size: 2.4rem; */
+    }
+
+    .about-img img {
+        height: 389px;
+        width: 500px;
+        align-self: center;
+    }
+
+    .services{
+        padding: 0px 40px;
+    }
+
+    .services-iframe{
+        height: 270px;
+        width: 480px;
+    }
+
+    .services-iframe iframe{
+        height: 202.50px;
+        width: 360px;
+    }
+
+    .footer-three {
+        grid-template-rows: repeat(2, 1fr);
+        height: 200px;
+    }
+
+    .contact-three{
+        align-self: center;
+        justify-self: center;
+    }
+
+    .social-three{
+        align-self: center;
+        justify-self: center;
+    }
+
+    .news-three{
+        display: none;
+    }
+
+    .contactus{
+        padding: 0px 40px;
+    }
+
 }
