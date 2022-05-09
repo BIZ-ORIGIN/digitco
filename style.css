@@ -1012,7 +1012,7 @@ header nav i:hover{
         align-content: center;
         justify-items: center;
         height: 3000px;
-        background-color: coral;
+        /* background-color: coral; */
     }
 
     .currency .three-box{
@@ -1164,7 +1164,7 @@ header nav i:hover{
         grid-template-columns: repeat(3, 1fr);
         align-content: none;
         justify-items: none;
-        background-color: rgb(255, 255, 0);
+        background-color: rgb(255, 255, 255);
         width: 100%;
         position: fixed;
         z-index: 9999;
@@ -1180,7 +1180,7 @@ header nav i:hover{
 
     .mysocial i{
         padding: 0px 10px;
-        color: rgb(43, 213, 200);
+        /* color: rgb(43, 213, 200); */
     }
 
 
@@ -1340,7 +1340,7 @@ header nav i:hover{
     }
 
     .services{
-        background-color: red;
+        /* background-color: red; */
         padding: 0px 20px;
     }
 
