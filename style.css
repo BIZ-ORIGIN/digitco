@@ -46,6 +46,10 @@ header{
     /* background-color: red; */
 }
 
+.mysocial{
+    display: none;
+}
+
 header nav{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -1152,14 +1156,33 @@ header nav i:hover{
 }
 
 @media only screen and (max-width: 48em){
-    header{
-        gap: 180px;
+    .details{
+        display: none;
     }
 
-    header nav{
-        grid-template-columns: 50%;
-        gap: 100px;
+    header{
+        grid-template-columns: repeat(3, 1fr);
+        align-content: none;
+        justify-items: none;
+        background-color: rgb(255, 255, 0);
+        width: 100%;
+        position: fixed;
+        z-index: 9999;
+        /* gap: 180px; */
     }
+
+    .mysocial{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        font-size: 1.6rem;
+    }
+
+    .mysocial i{
+        padding: 0px 10px;
+        color: rgb(43, 213, 200);
+    }
+
 
     header nav a{
         display: none;
@@ -1171,20 +1194,22 @@ header nav i:hover{
 
     .fa-bars{
         display: grid;
+        font-size: 1.6rem;
     }
 
     .banner{
         height: 1600px;
     }
-    
+
     .currency{
         grid-template-rows: 3% 97%;
         height: 2400px;
-        
+
     }
-    
+
     .currency label{
         font-size: 1.8rem;
+        text-align: center;
         font-weight: 500;
     }
 
@@ -1197,13 +1222,9 @@ header nav i:hover{
         padding: 0px 40px;
     }
 
-    .about-text label{
-        /* font-size: 2.4rem; */
-    }
-
     .about-img img {
-        height: 389px;
-        width: 500px;
+        height: 311px;
+        width: 400px;
         align-self: center;
     }
 
@@ -1212,8 +1233,8 @@ header nav i:hover{
     }
 
     .services-iframe{
-        height: 270px;
-        width: 480px;
+        height: 230px;
+        width: 395px;
     }
 
     .services-iframe iframe{
@@ -1222,18 +1243,13 @@ header nav i:hover{
     }
 
     .footer-three {
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         height: 200px;
+        gap: 40px
     }
 
-    .contact-three{
-        align-self: center;
-        justify-self: center;
-    }
-
-    .social-three{
-        align-self: center;
-        justify-self: center;
+    .social-three-link{
+        padding: 0px 10px;
     }
 
     .news-three{
@@ -1244,4 +1260,138 @@ header nav i:hover{
         padding: 0px 40px;
     }
 
+    .team-members{
+        padding: 0px 40px;
+    }
+}
+
+@media only screen and (max-width: 30em){
+    /* header{
+        align-items: center;
+        justify-items: center;
+    } */
+
+    /* header img{
+        align-items: center;
+    }
+
+    .mysocial{
+        align-items: center;
+    }
+
+    .fa-bars{
+        align-items: center;
+    } */
+
+    .banner{
+        height: 1800px;
+    }
+
+    .currency{
+        padding: 0px 0px;
+    }
+
+    .currency .three-box{
+        padding: 0px 20px;
+        width: 100%;
+    }
+
+    .request-container{
+        padding: 0px 10px;
+    }
+
+    .contactus {
+        padding: 0px 20px;
+    }
+    
+    .team-members {
+        padding: 0px 20px;
+    }
+
+    .footer-three{
+        padding: 0px 20px;
+        gap: 10px;
+    }
+
+    .contact-three label{
+        font-size: 1.8rem;
+    }
+
+    .social-three label{
+        font-size: 1.8rem;
+    }
+
+    .contact-three-link{
+        height: 45px;
+        width: 45px;
+    }
+
+    .contact-three-link i{
+        font-size: 1.6rem;
+    }
+
+    .social-three-link i{
+        font-size: 1.6rem;
+    }
+
+    .copyright label{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .services{
+        background-color: red;
+        padding: 0px 20px;
+    }
+
+    .second-service{
+        grid-template-rows: 35% 35% 30%;
+    }
+
+    .second-service label{
+        font-size: 2.4rem;
+    }
+
+    .services-iframe {
+        height: 200px;
+        width: 275px;
+        border: none;
+        border-radius: 0px;
+        background: none;
+    }
+    
+    .services-iframe iframe {
+        height: 135px;
+        width: 240px;
+    }
+
+    .team-members{
+        padding: 0px;
+    }
+    
+    .team-text{
+        padding: 0px 20px;
+    }
+
+    .team-text label{
+        font-size: 2.4rem;
+    }
+
+    .team-text p{
+        font-size: 1.4rem;
+    }
+
+    .about{
+        padding: 0px 20px;
+    }
+
+    .about-img img {
+        height: 217px;
+        width: 280px;
+        align-self: center;
+    }
+
+    .about-text label {
+        font-size: 2.2rem;
+    }
 }
