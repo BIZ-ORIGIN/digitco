@@ -93,8 +93,8 @@ header nav i:hover{
     width: 100%;
     background-color: rgba(0,0,0, 0.9);
     z-index: 9;
-    gap: 20px; 
-    /* align-items: center; */
+    gap: 20px;
+    align-items: center;
 }
 
 .sidebar-container{
