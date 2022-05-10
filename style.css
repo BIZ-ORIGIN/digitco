@@ -85,6 +85,50 @@ header nav i:hover{
     display: none;
 }
 
+.sidebar{
+    display: none;
+    /* grid-template-rows: repeat(2, 1fr); */
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.9);
+    z-index: 9;
+    gap: 20px; 
+    /* align-items: center; */
+}
+
+.sidebar-container{
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+.sidebar-container a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.4rem;
+}
+
+/* .sidebar-container a:hover{
+    color: rgb(43, 213, 200);
+} */
+
+.sidebar-container i{
+    color: rgb(255, 255, 255);
+    font-size: 2.4rem;
+}
+
+.sidebar a:hover{
+    color: rgb(43, 213, 200);
+}
+
+.sidebar i:hover{
+    color: rgb(43, 213, 200);
+}
+
 .banner{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1161,7 +1205,7 @@ header nav i:hover{
     }
 
     header{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         align-content: none;
         justify-items: none;
         background-color: rgb(255, 255, 255);
@@ -1174,8 +1218,10 @@ header nav i:hover{
     .mysocial{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        align-items: center;
-        font-size: 1.6rem;
+        /* align-items: center; */
+        justify-self: center;
+        color: rgb(255, 255, 255);
+        font-size: 2.4rem;
     }
 
     .mysocial i{
@@ -1195,6 +1241,17 @@ header nav i:hover{
     .fa-bars{
         display: grid;
         font-size: 1.6rem;
+        cursor: pointer;
+    }
+
+    .sidebar.hide {
+        display: none;
+        transition: all 1s;
+    }
+
+    .sidebar{
+        display: grid;
+        transition: all 1s;
     }
 
     .banner{
@@ -1303,7 +1360,7 @@ header nav i:hover{
     .contactus {
         padding: 0px 20px;
     }
-    
+
     .team-members {
         padding: 0px 20px;
     }
@@ -1359,7 +1416,7 @@ header nav i:hover{
         border-radius: 0px;
         background: none;
     }
-    
+
     .services-iframe iframe {
         height: 135px;
         width: 240px;
@@ -1368,7 +1425,7 @@ header nav i:hover{
     .team-members{
         padding: 0px;
     }
-    
+
     .team-text{
         padding: 0px 20px;
     }
