@@ -46,6 +46,10 @@ header{
     /* background-color: red; */
 }
 
+header img{
+  width: 230px
+}
+
 .mysocial{
     display: none;
 }
@@ -94,14 +98,14 @@ header nav i:hover{
     background-color: rgba(0,0,0, 0.9);
     z-index: 9;
     gap: 20px;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .sidebar-container{
     display: grid;
     align-self: center;
     justify-self: center;
-    margin-top: 100px;
+    margin-top: 150px;
     gap: 20px;
 }
 
@@ -421,7 +425,7 @@ header nav i:hover{
     /* justify-items: center; */
     padding: 0px 100px;
     gap: 40px;
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 100%;
 }
 
@@ -565,7 +569,8 @@ header nav i:hover{
     width: 605px;
     align-content: center;
     justify-items: center;
-    background: linear-gradient(rgb(255, 233, 233), rgb(255, 178, 181));
+
+    /* background: linear-gradient(rgb(255, 233, 233), rgb(255, 178, 181)); */
     box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.2);
     height: 360px;
     border-radius: 10px;
@@ -1212,6 +1217,7 @@ header nav i:hover{
         width: 100%;
         position: fixed;
         z-index: 9999;
+        color: rgb;
         /* gap: 180px; */
     }
 
