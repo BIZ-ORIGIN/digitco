@@ -136,11 +136,12 @@ header nav i:hover{
 .banner{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 500px;
+    height: 600px;
     align-content: center;
     justify-items: center;
     padding: 0px 20px;
     gap: 20px;
+    background-color: red;
 }
 
 #carouselExampleFade {
@@ -234,7 +235,7 @@ header nav i:hover{
 .currency .currency-label{
     display: grid;
     width: 100%;
-    /* background-color: red; */
+    /* background-color: aqua; */
     align-content: center;
     justify-items: center;
 }
@@ -427,6 +428,7 @@ header nav i:hover{
     gap: 40px;
     /* background-color: aqua; */
     width: 100%;
+    background-color: aqua;
 }
 
 .about-text{
@@ -451,15 +453,20 @@ header nav i:hover{
 
 .about-img{
     display: grid;
-    align-content: center;
-    justify-items: center;
+    /* align-content: center;
+    justify-items: center; */
+    /* background: url(pictures/about.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px; */
+    /* background-color: grey; */
 }
 
 .about-img img{
     /* object-fit: cover; */
-    /* background-position:  */
-    height: 489px;
-    width: 628px;
+    /* background-size: cover; */
+    height: 100%;
+    width: 100%;
 }
 
 .services{
@@ -969,17 +976,27 @@ header nav i:hover{
 
     .banner{
 
-        height: 800px;
+        height: 600px;
+        /* padding: 0px 10px; */
+        /* gap: 10px; */
         /* background-color: blueviolet; */
 
     }
 
-    .banner-text{
-        padding: 40px;
+    .banner-text h1{
+        font-size: 6.4rem;
+    }
+
+    .banner-text h2{
+        font-size: 5.4rem;
+    }
+
+    .banner-text p{
+        font-size: 1.6rem;
     }
 
     .carousel-item img{
-        height: 800px;
+        height: 500px;
     }
 
     .currency{
@@ -995,7 +1012,7 @@ header nav i:hover{
     .about{
         /* background-color: darkcyan; */
         /* align-items: center; */
-        height: 900px;
+        height: 500px;
     }
 
     .about-text label{
@@ -1052,23 +1069,27 @@ header nav i:hover{
     .banner{
         grid-template-columns: none;
         grid-template-rows: repeat(2, 1fr);
-        height: 1400px;
-        padding: 0px 0px;
+        height: 1000px;
+        padding: 0px;
+    }
+
+    .banner-text{
+        padding: 20px;
     }
 
     .currency{
         grid-template-rows: 5% 95%;
         align-content: center;
         justify-items: center;
-        height: 3000px;
-        /* background-color: coral; */
+        height: 2400px;
+        background-color: coral;
     }
 
     .currency .three-box{
         grid-template-columns: none;
-        padding: 0px 50px;
+        padding: 0px 120px;
         width: 80%;
-        grid-template-rows: repeat(3, 30%);
+        grid-template-rows: repeat(3, 1fr);
         gap: 50px;
     }
 
@@ -1126,8 +1147,10 @@ header nav i:hover{
 
     .about{
         grid-template-columns: none;
-        grid-template-rows: 30% 30%;
-        height: 900px;
+        grid-template-rows: 20% 60%;
+        gap: 0px;
+        height: 800px;
+        align-items: center;
     }
 
     /* .about-img{
@@ -1140,9 +1163,10 @@ header nav i:hover{
     } */
 
     .about-img img{
-        height: 436px;
-        width: 498px;
+        /* height: 436px;
+        width: 498px; */
         align-self: center;
+        justify-self: center;
     }
 
     .services{
