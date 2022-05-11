@@ -43,7 +43,6 @@ header{
     align-content: center;
     justify-items: center;
     width: 100%;
-    /* background-color: red; */
 }
 
 header img{
@@ -91,14 +90,12 @@ header nav i:hover{
 
 .sidebar{
     display: none;
-    /* grid-template-rows: repeat(2, 1fr); */
     position: fixed;
     height: 100%;
     width: 100%;
     background-color: rgba(0,0,0, 0.9);
     z-index: 9;
     gap: 20px;
-    /* align-items: center; */
 }
 
 .sidebar-container{
@@ -116,21 +113,9 @@ header nav i:hover{
     font-size: 2.4rem;
 }
 
-/* .sidebar-container a:hover{
-    color: rgb(43, 213, 200);
-} */
-
 .sidebar-container i{
     color: rgb(255, 255, 255);
     font-size: 2.4rem;
-}
-
-.sidebar a:hover{
-    color: rgb(43, 213, 200);
-}
-
-.sidebar i:hover{
-    color: rgb(43, 213, 200);
 }
 
 .banner{
@@ -141,20 +126,11 @@ header nav i:hover{
     justify-items: center;
     padding: 0px 20px;
     gap: 20px;
-    background-color: red;
 }
 
 #carouselExampleFade {
     width: 100%;
 }
-
-/*
-
-.carousel-item img{
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-}*/
 
 .carousel-item img{
     height: 500px;
@@ -182,9 +158,6 @@ header nav i:hover{
 
 .banner-text{
     display: grid;
-    /* align-content: center; */
-    /* justify-items: center; */
-    /* background-color: red; */
     width: 100%;
 }
 
@@ -229,13 +202,11 @@ header nav i:hover{
     width: 100%;
     align-content: center;
     justify-items: center;
-    /* background-color: blue; */
 }
 
 .currency .currency-label{
     display: grid;
     width: 100%;
-    /* background-color: aqua; */
     align-content: center;
     justify-items: center;
 }
@@ -252,7 +223,6 @@ header nav i:hover{
 .currency .three-box{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* background-color: orange; */
     padding: 0px 100px;
     align-content: center;
     justify-items: center;
@@ -423,12 +393,9 @@ header nav i:hover{
     grid-template-columns: repeat(2, 1fr);
     height: 600px;
     align-content: center;
-    /* justify-items: center; */
     padding: 0px 100px;
     gap: 40px;
-    /* background-color: aqua; */
     width: 100%;
-    background-color: aqua;
 }
 
 .about-text{
@@ -453,18 +420,9 @@ header nav i:hover{
 
 .about-img{
     display: grid;
-    /* align-content: center;
-    justify-items: center; */
-    /* background: url(pictures/about.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 600px; */
-    /* background-color: grey; */
 }
 
 .about-img img{
-    /* object-fit: cover; */
-    /* background-size: cover; */
     height: 100%;
     width: 100%;
 }
@@ -477,8 +435,6 @@ header nav i:hover{
     padding: 0px 100px;
     gap: 60px;
     align-items: center;
-    /* align-content: center; */
-    /* justify-items: center; */
 }
 
 .first-service{
@@ -491,7 +447,6 @@ header nav i:hover{
 .strong-security{
     display: grid;
     height: 330px;
-    /* grid-template-rows: repeat(3, 1fr); */
     background-color: rgb(16, 5, 5);
     align-content: center;
     justify-items: center;
@@ -522,7 +477,6 @@ header nav i:hover{
 .world-coverage{
     display: grid;
     height: 330px;
-    /* grid-template-rows: repeat(3, 1fr); */
     background-color: rgb(43, 213, 200);
     align-content: center;
     justify-items: center;
@@ -576,8 +530,6 @@ header nav i:hover{
     width: 605px;
     align-content: center;
     justify-items: center;
-
-    /* background: linear-gradient(rgb(255, 233, 233), rgb(255, 178, 181)); */
     box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.2);
     height: 360px;
     border-radius: 10px;
@@ -619,8 +571,6 @@ header nav i:hover{
     padding: 0px 100px;
     gap: 30px;
     align-items: center;
-    /* align-content: center; */
-    /* justify-items: center; */
 }
 
 .team-card .team-img1{
@@ -707,7 +657,6 @@ header nav i:hover{
     height: 700px;
     padding: 0px 100px;
     align-items: center;
-    /* justify-items: center; */
     gap: 40px;
 }
 
@@ -734,7 +683,6 @@ header nav i:hover{
     font-size: 1.8rem;
     height: 70px;
     padding: 0px 20px;
-    /* color: rgb(207, 206, 206); */
 }
 
 .contact-input input:focus{
@@ -746,7 +694,6 @@ header nav i:hover{
     border: 2px solid rgb(207, 206, 206);
     font-size: 1.8rem;
     padding: 10px 20px;
-    /* color: rgb(207, 206, 206); */
     height: 227px;
 }
 
@@ -772,7 +719,6 @@ header nav i:hover{
 
 .request{
     display: grid;
-    /* align-items: center; */
     align-content: center;
     justify-items: center;
     background: linear-gradient(rgba(0 , 0, 0, 0.8) , rgba(0 , 0, 0, 0.8)) , url('pictures/request.jpg');
@@ -781,7 +727,6 @@ header nav i:hover{
     background-size: cover;
     height: 550px;
     width: 100%;
-    /* padding: 40px 40px; */
 }
 
 .request-container{
@@ -794,7 +739,6 @@ header nav i:hover{
     align-content: center;
     justify-items: center;
     padding: 0px 20px;
-    /* border: 2px solid rgb(255, 255, 255); */
 }
 
 .request-container label{
@@ -898,7 +842,6 @@ header nav i:hover{
 }
 
 .social-three-link i {
-    /* color: rgb(255, 255, 255); */
     font-size: 2rem;
 }
 
@@ -975,12 +918,7 @@ header nav i:hover{
 @media (max-width: 75em){
 
     .banner{
-
         height: 600px;
-        /* padding: 0px 10px; */
-        /* gap: 10px; */
-        /* background-color: blueviolet; */
-
     }
 
     .banner-text h1{
@@ -1005,13 +943,10 @@ header nav i:hover{
     }
 
     .currency .three-box{
-        /* background-color: red; */
         grid-template-columns: repeat(2, 1fr);
     }
 
     .about{
-        /* background-color: darkcyan; */
-        /* align-items: center; */
         height: 500px;
     }
 
@@ -1025,8 +960,7 @@ header nav i:hover{
 
 
     .services{
-        /* grid-template-rows: 30% 30%; */
-        padding: 0px 80px;
+        padding: 0px 100px;
         gap: 5px;
     }
 
@@ -1039,17 +973,16 @@ header nav i:hover{
     .second-service{
         align-content: center;
         justify-items: center;
-        /* grid-template-rows: repeat(3, 1fr); */
     }
 
     .services-iframe{
-        height: 360px;
-        width: 605px;
+        height: 100%;
+        width: 100%;
+        padding: 10px 20px;
     }
 
     .services-iframe iframe{
-        width: 560;
-        height: 315;
+        width: 100%;
     }
 }
 
@@ -1082,15 +1015,15 @@ header nav i:hover{
         align-content: center;
         justify-items: center;
         height: 2400px;
-        background-color: coral;
+        gap: 10px;
     }
 
     .currency .three-box{
         grid-template-columns: none;
-        padding: 0px 120px;
-        width: 80%;
+        padding: 0px;
+        width: 500px;
         grid-template-rows: repeat(3, 1fr);
-        gap: 50px;
+        gap: 20px;
     }
 
     .currency label{
@@ -1132,59 +1065,47 @@ header nav i:hover{
     .img-3 button {
         margin-top: 50%;
     }
-    /* .img-1{
-        width: 50%;
-        padding: 0px 0px;
-    }
-
-    .img-2 {
-        width: 50%;
-    }
-
-    .img-3 {
-        width: 50%;
-    } */
 
     .about{
         grid-template-columns: none;
-        grid-template-rows: 20% 60%;
+        grid-template-rows: 20% 70%;
         gap: 0px;
         height: 800px;
         align-items: center;
     }
 
-    /* .about-img{
-
-        justify-items: center;
-        left: 0;
-        right: 0;
-        align-content: center;
-        justify-self: center;
-    } */
-
     .about-img img{
-        /* height: 436px;
-        width: 498px; */
         align-self: center;
         justify-self: center;
     }
 
     .services{
         grid-template-columns: none;
-        grid-template-rows: repeat(2, 40%);
-        height: 1600px;
+        grid-template-rows: 35% 35%;
+        height: 1400px;
+        gap: 0px;
+        padding: 0px 80px;
         align-content: center;
-        /* align-items: center;
-        justify-items: center; */
+    }
+
+    .first-service{
+        padding: 0px;
+    }
+
+    .fa-shield-halved{
+        font-size: 6.4rem;
+    }
+
+    .fa-globe{
+        font-size: 6.4rem;
     }
 
     .second-service{
-        grid-template-rows: 20% 20% 60%;
+        grid-template-rows: 10% 10% 40%;
     }
 
     .team{
         height: 3200px;
-        /* align-content: center; */
         grid-template-rows: 5% 95%;
     }
 
@@ -1193,8 +1114,6 @@ header nav i:hover{
     }
 
     .team-members{
-        /* align-content: center; */
-        /* justify-items: center; */
         grid-template-columns: none;
         grid-template-rows: repeat(3, 1fr);
     }
@@ -1222,6 +1141,16 @@ header nav i:hover{
         height: 1400px;
     }
 
+    .services-iframe {
+        height: 400px;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .services-iframe iframe {
+        width: 100%;
+    }
+
     .footer-three{
         grid-template-columns: repeat(2, 1fr);
         height: 400px;
@@ -1234,7 +1163,7 @@ header nav i:hover{
     }
 
     header{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 60%);
         align-content: none;
         justify-items: none;
         background-color: rgb(255, 255, 255);
@@ -1242,13 +1171,12 @@ header nav i:hover{
         position: fixed;
         z-index: 9999;
         color: rgb;
-        /* gap: 180px; */
+        gap: 0px;
     }
 
     .mysocial{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        /* align-items: center; */
         justify-self: center;
         color: rgb(255, 255, 255);
         font-size: 2.4rem;
@@ -1256,9 +1184,12 @@ header nav i:hover{
 
     .mysocial i{
         padding: 0px 10px;
-        /* color: rgb(43, 213, 200); */
+        cursor: pointer;
     }
 
+    .mysocial i:hover{
+        color: rgb(43, 213, 200);
+    }
 
     header nav a{
         display: none;
@@ -1270,7 +1201,7 @@ header nav i:hover{
 
     .fa-bars{
         display: grid;
-        font-size: 1.6rem;
+        font-size: 2.4rem;
         cursor: pointer;
     }
 
@@ -1285,13 +1216,7 @@ header nav i:hover{
     }
 
     .banner{
-        height: 1600px;
-    }
-
-    .currency{
-        grid-template-rows: 3% 97%;
-        height: 2400px;
-
+        height: 1000px;
     }
 
     .currency label{
@@ -1301,32 +1226,40 @@ header nav i:hover{
     }
 
     .currency .three-box{
-        padding: 0px 20px;
+        padding: 20px;
+        width: 80%;
     }
 
     .about{
-        /* grid-template-rows: 35% 35%; */
-        padding: 0px 40px;
+        grid-template-rows: 10% 40%;
+        height: 700px;
+        padding: 0px 50px;
+        gap: 120px;
     }
 
     .about-img img {
-        height: 311px;
-        width: 400px;
-        align-self: center;
+        height: 100%;
+        width: 100%;
     }
 
     .services{
-        padding: 0px 40px;
+        grid-template-rows: 55% 30%;
+        height: 1200px;
+    }
+
+    .second-service {
+        grid-template-rows: 20% 20% 50%;
+        
     }
 
     .services-iframe{
-        height: 230px;
-        width: 395px;
+        height: 200px;
+        width: 100%;
     }
 
     .services-iframe iframe{
-        height: 202.50px;
-        width: 360px;
+        height: 100%;
+        width: 100%;
     }
 
     .footer-three {
@@ -1353,29 +1286,35 @@ header nav i:hover{
 }
 
 @media only screen and (max-width: 30em){
-    /* header{
-        align-items: center;
-        justify-items: center;
-    } */
 
-    /* header img{
-        align-items: center;
+
+    header {
+        grid-template-columns: repeat(2, 60%);
+        gap: 20px;
     }
 
-    .mysocial{
-        align-items: center;
+    header img {
+        width: 180px
     }
-
-    .fa-bars{
-        align-items: center;
-    } */
 
     .banner{
-        height: 1800px;
+        height: 1000px;
     }
 
+    .banner-text h1 {
+        font-size: 3.6rem;
+    }
+    
+    .banner-text h2 {
+        font-size: 3rem;
+    }
+
+    .banner-text p{
+        font-size: 1.4rem;
+    }
+    
     .currency{
-        padding: 0px 0px;
+        padding: 0px;
     }
 
     .currency .three-box{
@@ -1427,13 +1366,9 @@ header nav i:hover{
     }
 
     .services{
-        /* background-color: red; */
         padding: 0px 20px;
     }
 
-    .second-service{
-        grid-template-rows: 35% 35% 30%;
-    }
 
     .second-service label{
         font-size: 2.4rem;
@@ -1441,15 +1376,15 @@ header nav i:hover{
 
     .services-iframe {
         height: 200px;
-        width: 275px;
+        width: 100%;
         border: none;
         border-radius: 0px;
         background: none;
     }
 
     .services-iframe iframe {
-        height: 135px;
-        width: 240px;
+        height: 100%;
+        width: 100%;
     }
 
     .team-members{
@@ -1469,12 +1404,14 @@ header nav i:hover{
     }
 
     .about{
+        grid-template-rows: 10% 20%;
         padding: 0px 20px;
+        gap: 200px;
     }
 
     .about-img img {
-        height: 217px;
-        width: 280px;
+        height: 100%;
+        width: 100%;
         align-self: center;
     }
 
