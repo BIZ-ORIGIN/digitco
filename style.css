@@ -1182,12 +1182,13 @@ header nav i:hover{
         font-size: 2.4rem;
     }
 
-    .mysocial i{
+    .mysocial a{
         padding: 0px 10px;
+        color: rgb(255, 255, 255);
         cursor: pointer;
     }
 
-    .mysocial i:hover{
+    .mysocial a:hover{
         color: rgb(43, 213, 200);
     }
 
