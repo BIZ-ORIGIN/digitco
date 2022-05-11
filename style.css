@@ -1168,8 +1168,6 @@ header nav i:hover{
         justify-items: none;
         background-color: rgb(255, 255, 255);
         width: 100%;
-        position: fixed;
-        z-index: 9999;
         color: rgb;
         gap: 0px;
     }
