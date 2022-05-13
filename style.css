@@ -19,6 +19,7 @@ html{
     background-color: rgb(43, 213, 200);
     padding: 0px 20px;
     width: 100%;
+    z-index: 9999;
 }
 
 .details label{
@@ -28,12 +29,13 @@ html{
 }
 
 .details-container{
-    color: rgb(255, 255, 255);
     font-size: 1.6rem;
 }
 
-.details-container i{
+.details-container a{
+    color: rgb(255, 255, 255);
     padding: 0px 20px;
+    cursor: pointer;
 }
 
 header{
@@ -46,7 +48,7 @@ header{
 }
 
 header img{
-  width: 230px
+  width: 200px;
 }
 
 .mysocial{
@@ -121,7 +123,7 @@ header nav i:hover{
 .banner{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 600px;
+    height: 500px;
     align-content: center;
     justify-items: center;
     padding: 0px 20px;
@@ -918,7 +920,7 @@ header nav i:hover{
 @media (max-width: 75em){
 
     .banner{
-        height: 600px;
+        height: 500px;
     }
 
     .banner-text h1{
@@ -987,7 +989,7 @@ header nav i:hover{
 }
 
 @media only screen and (max-width: 64em){
-    .details-container i{
+    .details-container a{
         padding: 0px 10px;
     }
 
@@ -1295,7 +1297,7 @@ header nav i:hover{
     }
 
     header img {
-        width: 180px
+        width: 180px;
     }
 
     .banner{
